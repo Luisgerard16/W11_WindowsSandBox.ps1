@@ -111,9 +111,9 @@ $ComputerInfo = Get-ComputerInfo
                 }  
                 #Option 3 : Windows Sandbox installation
             "3" {
-                    Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
-                    Write-Host "After installation, please restart your computer and relaunch this script and select option 1 " -ForegroundColor Green
-                    Write-Output ""
+                Enable-WindowsOptionalFeature -FeatureName "Containers-DisposableClientVM" -All -Online
+                Write-Host "After installation, please restart your computer and relaunch this script and select option 1 " -ForegroundColor Green
+                Write-Output ""
                 }
                 #Option x : Exit menu
             "x" {$continue = $false}
